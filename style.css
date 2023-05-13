@@ -1,0 +1,145 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: grey !important;
+}
+
+.checked {
+    color: orange;
+}
+
+.unchecked {
+    color: gray;
+}
+
+.main-container {
+    background-color: white;
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 20px;
+}
+
+#progress-container {
+    width: 100%;
+    height: 10px;
+    background-color: #f2f2f2;
+    position: relative;
+}
+
+#progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #4CAF50;
+    transition: width 0.3s ease-in-out;
+}
+
+.question_no {
+    font-size: 75px;
+    font-weight: bold;
+}
+
+.quiz-type {
+    margin-top: 30px;
+    margin-bottom: -25px;
+}
+
+.timer_box {
+    padding-top: 40px;
+}
+
+
+.ratings {
+    padding-left: 20px !important;
+    margin-top: -10px
+}
+
+#question {
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 1
+}
+
+.quiz-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    justify-items: stretch;
+    width: 100%;
+    padding: 20px;
+}
+
+.answer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    /* Add rounded corners */
+}
+
+.selected {
+    background-color: green;
+    color: white;
+}
+
+.options_row {
+    display: flex;
+    justify-content: center;
+}
+
+.suggestion_row {
+    margin-top: 50px;
+    font-size: xxx-large;
+    text-align: center;
+    color: green;
+}
+
+
+.next_row {
+    text-align: center;
+}
+
+#next-button {
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    padding-top: 15px;
+    width: 300px;
+    padding-bottom: 15px;
+    margin-top: 30px
+}
+#check-result-button{
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    padding-top: 15px;
+    width: 300px;
+    padding-bottom: 15px;
+    margin-top: 30px
+}
+.correct_text {
+    color: green !important;
+  }
+  
+  .incorrect_text {
+    color: red !important;
+  }

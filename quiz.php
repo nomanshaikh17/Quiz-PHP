@@ -85,10 +85,7 @@
                 
             </div>
         </div>
-        <div class="score_row row">
-            <div class="col-md-12">Score suggestion bar here</div>
-
-        </div>
+        
     </div>
 
     <!-- Optional JavaScript -->

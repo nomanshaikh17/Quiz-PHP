@@ -18,6 +18,7 @@ $(document).ready(function () {
     if (timeLeft <= 0) {
       clearInterval(timerInterval);
       alert('Time is up!');
+      checkResult();
     }
 
     timeLeft--;
@@ -40,6 +41,10 @@ $(document).ready(function () {
         } else {
             // All questions have been answered
             // Display the check result button
+            $('.suggestion_row').hide();
+            $('.options_row').hide();
+            $('.question_row').hide();
+            $('.top_row').hide();
             nextButton.hide();
             checkResultButton.show();
         }
@@ -78,6 +83,7 @@ function checkResult(){
 
         // Update the question number display
         $('.question_no').text('Question ' + questionNumber + ' of ' + totalQuestions);
+        $('.quiz-type').text(questions[currentQuestion].type);
 
         questionElement.text(decodeURIComponent(questions[currentQuestion].question));
         difficulty = questions[currentQuestion].difficulty;
